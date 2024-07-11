@@ -1,0 +1,48 @@
+/* src/styles/home.css */
+.home-container {
+  background-color: #3e719ee5; /* Color de fondo suave */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px;
+}
+
+.info-card {
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 60%;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+  /* Establecer la imagen de fondo */
+  background-image: url("depositphotos_418131352-stock-photo-image-partly-cloudy-partly-clear.jpg"); /* Reemplaza con la ruta correcta */
+  background-size: cover; /* Ajustar la imagen para cubrir todo el fondo */
+  background-repeat: no-repeat; /* Evitar la repetición de la imagen */
+  background-position: center; /* Centrar la imagen */
+
+  /* Capa semitransparente */
+  background-color: rgba(255, 255, 255, 0.7); /* Blanco con opacidad del 70% */
+}
+
+.info-card:hover {
+  transform: translateY(-5px); /* Efecto de elevación al pasar el cursor */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+}
+
+.map-card {
+  background: #3e719ee5; /* Fondo blanco */
+  padding: 30px;
+  border-radius: 16px; /* Borde redondeado */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.map-card:hover {
+  transform: translateY(-5px); /* Efecto de elevación al pasar el cursor */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+}

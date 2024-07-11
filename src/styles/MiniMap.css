@@ -1,0 +1,30 @@
+/* src/styles/MiniMap.css */
+.map-container {
+  background: #ffffff; /* Fondo blanco */
+  padding: 20px;
+  border-radius: 16px; /* Borde redondeado */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  width: 100%;
+  text-align: center;
+}
+
+.map-container:hover {
+  transform: translateY(-5px); /* Efecto de elevación al pasar el cursor */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+.map-button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #007bff; /* Color azul llamativo */
+  color: #ffffff; /* Texto blanco */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.map-button:hover {
+  background-color: #0056b3; /* Cambio de color al pasar el cursor */
+}
