@@ -1,30 +1,33 @@
 /* src/styles/MiniMap.css */
-.map-container {
-  background: #ffffff; /* Fondo blanco */
-  padding: 20px;
-  border-radius: 16px; /* Borde redondeado */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  width: 100%;
-  text-align: center;
-}
-
-.map-container:hover {
-  transform: translateY(-5px); /* Efecto de elevación al pasar el cursor */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+.mini-map {
+  border: 2px solid #3f51b5;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 60%; /* Ancho fijo para el widget */
+  margin-bottom: 20px; /* Espaciado inferior */
 }
 
 .map-button {
-  margin-top: 20px;
-  padding: 12px 24px;
-  background-color: #007bff; /* Color azul llamativo */
-  color: #ffffff; /* Texto blanco */
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #002db5d2;
+  color: #ffffff;
   border: none;
-  border-radius: 8px;
+  border-radius: 0 0 16px 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
+  font-size: 1em;
+  transition: background-color 0.3s;
 }
 
 .map-button:hover {
-  background-color: #0056b3; /* Cambio de color al pasar el cursor */
+  background-color: #0324ffa1;
+}
+
+.map-button:focus {
+  outline: none;
+}
+
+.map-button:active {
+  transform: translateY(2px);
 }

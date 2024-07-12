@@ -45,3 +45,20 @@
     margin-bottom: 10px; /* Espaciado inferior entre enlaces en dispositivos móviles */
   }
 }
+.map-card {
+  background: #3e719ee5; /* Fondo blanco */
+  padding: 30px;
+  border-radius: 16px; /* Borde redondeado */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.map-card:hover {
+  transform: translateY(-5px); /* Efecto de elevación al pasar el cursor */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+}

@@ -1,13 +1,15 @@
+// src/components/Home.jsx
 import React from "react";
 import "../styles/home.css";
+import WeatherCard from "./WeatherCard";
 import MiniMap from "./MiniMap";
 import NavBar from "./NavBar";
 
 const weatherInfo = {
   location: "Formosa, Argentina",
-  temperature: "13°C, Parc. soleado",
+  temperature: "13°C",
   feelsLike: "Sensación térmica: 11°C",
-  wind: "Viento: 15 km/h",
+  windSpeed: "Viento: 15 km/h",
   humidity: "Humedad: 58%",
   visibility: "Visibilidad: 20 km",
   pressure: "Presión: 1024 mbar",
@@ -18,17 +20,8 @@ const Home = () => {
   return (
     <div>
       <NavBar />
-
-      <div className="home-container">
-        <div className="info-card">
-          <h5>&#128205; {weatherInfo.location}</h5>
-          {Object.keys(weatherInfo).map(
-            (key) => key !== "location" && <p key={key}>{weatherInfo[key]}</p>
-          )}
-        </div>
-        <div className="map-card">
-          <MiniMap />
-        </div>
+      <div className="col-md-3">
+        <MiniMap />
       </div>
     </div>
   );
